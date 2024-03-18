@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Showcase</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="content-wrapper">
+        <header class="gallery-header">
+            <h1>Welcome</h1>
+            <p id="student-id-display">Student ID will be shown here</p>
+        </header>
+        <div class="action-section">
+            <input type="number" id="bg-color-input" placeholder="Enter 0-100 for color change">
+            <button id="color-change-btn">Set Color</button>
+            <button id="random-color-btn">Random Color</button>
+        </div>
+        <div class="image-selection-area">
+            <label for="photo-select">Select an Image:</label>
+            <select id="photo-select">
+                <option disabled selected>-- Select --</option>
+            </select>
+        </div>
+        <div class="image-viewer">
+            <img id="image-to-view" src="" alt="Selected Image" hidden>
+        </div>
+    </div>
+</body>
+</html>
